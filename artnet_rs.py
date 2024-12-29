@@ -48,7 +48,7 @@ class ArtnetServer():
             #print("Physical input port: ",data[13])
             #print("15bit port address: ",data[14:16])
             #print("Array length: ",data[16:17])
-            return data[18:30]
+            return data[18:42]
         else:
             print('ERROR!!!! - unknown packet type')
 

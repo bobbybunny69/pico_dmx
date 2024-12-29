@@ -6,7 +6,7 @@ from neopixel import Neopixel
 
 REFRESH_MS = 50
 
-np = Neopixel(50,0,0)
+np = Neopixel(100,0,0)
 np.clear()
 np.show()
 
@@ -33,6 +33,10 @@ try:
             np.set_pixel_line(13,24,(data[3:6]))
             np.set_pixel_line(25,36,(data[6:9]))
             np.set_pixel_line(38,49,(data[9:12]))
+            np.set_pixel_line(50,61,(data[12:15]))
+            np.set_pixel_line(63,74,(data[15:18]))
+            np.set_pixel_line(75,86,(data[18:21]))
+            np.set_pixel_line(88,99,(data[21:24]))
             np.show()
         toc = time.ticks_ms()
         print("Time stamp [ms]: ", toc-tic)
